@@ -1,0 +1,66 @@
+//Form globals
+legend,
+fieldset {
+  border: none;
+}
+
+legend {
+  display: none;
+}
+
+label {
+  display: none;
+}
+
+input {
+  display: block;
+  border: 1px solid #ddd;
+  padding: $base-font-size - 4px;
+  margin: $base-font-size auto;
+  width: 85%;
+}
+
+select {
+  @extend input;
+  @extend .bg-white;
+
+  color: $gray;
+}
+
+// Submit button for Reservation Form
+.sub-btn {
+  @extend .bg-red;
+  @extend .text-white;
+  @extend .h-center;
+
+  padding: ($base-font-size - 3) ($base-font-size*2);
+  margin: $base-font-size*2 auto;
+  font-family: PoppinsSemiBold, sans-serif;
+  width: auto;
+  cursor: pointer;
+}
+
+// Form group for subscribe newsletter
+.form-group {
+  position: relative;
+
+  input {
+    display: inline-block;
+    border: none;
+    border-radius: $base-font-size + 4px;
+    width: 100%;
+  }
+
+  .input-btn {
+    font-family: Flaticon;
+    border-radius: 50%;
+    position: absolute;
+    width: auto;
+    top: 2.5px;
+    right: 1.2px;
+    background-color: $red;
+    cursor: pointer;
+
+    @extend .text-white;
+  }
+}

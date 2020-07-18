@@ -1,0 +1,135 @@
+.__row--hero-bg {
+  background-image: url('../img/hero-bg.jpg');
+  background-size: cover;
+  position: relative;
+  min-height: 810px;
+
+  h1 {
+    margin: $base-font-size 0;
+  }
+
+  .__col--nest {
+    margin: -1em -1em;
+  }
+
+  .__logo {
+    display: block;
+
+    @extend .h-center;
+  }
+
+  // Navigation Menu
+  .__menu {
+    padding: $base-font-size + 4;
+    margin: $base-font-size;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    li {
+      position: relative;
+
+      @extend .text-center;
+      @extend .text-upcase;
+
+      a {
+        @extend .text-white;
+
+        &:hover {
+          @extend .text-red;
+        }
+      }
+
+      a.nest:hover + ul.drop-down {
+        display: block;
+      }
+
+      ul.drop-down {
+        display: none;
+        background-color: white;
+        position: absolute;
+        top: 45px;
+        right: 0;
+        padding: 10px;
+
+        li {
+          min-width: 100px;
+          text-align: left;
+
+          @extend .text-initcap;
+
+          a {
+            @extend .text-black;
+
+            &:hover {
+              @extend .text-red;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media #{$breakpoint-desktop} {
+  a.hamburger {
+    display: none;
+  }
+
+  a.close {
+    display: none;
+  }
+
+  ul.__menu {
+    display: flex;
+    justify-content: center;
+
+    li {
+      margin: 0 20px;
+    }
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .hamburger {
+    color: $white;
+    float: right;
+    display: block;
+  }
+
+  .close {
+    font-size: $base-font-size;
+    color: $white;
+    float: right;
+    display: none;
+  }
+
+  .__menu {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0 !important;
+    width: 40%;
+    height: 100%;
+  }
+}
+
+@media #{$breakpoint-mobile} {
+  .hamburger {
+    color: $white;
+    float: right;
+    display: block;
+  }
+
+  .__menu {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0 !important;
+    width: 40%;
+    height: 100%;
+  }
+}

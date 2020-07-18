@@ -1,0 +1,30 @@
+//variables.scss
+
+/* Break points */
+$breakpoint-desktop: "only screen and (min-width: 1025px)";
+$breakpoint-mobile: "only screen and (max-width: 767px)";
+$breakpoint-tablet: "only screen and (max-width: 1024px)";
+
+/* Grids */
+$grid-cols: 12;
+$grid-max-width: 100em;
+$screen-size: 100%;
+
+/* Colors */
+$black: #000;
+$dark-gray: #222;
+$gray: rgb(119, 119, 119);
+$lightgray: #f9f9ff;
+$red: #f42f2c;
+$white: #fff;
+
+/* Typography */
+$base-font-size: 16px;
+$base-font-weight: 300;
+$font-l1: 3.75em;
+$font-l2: 2.25em;
+$font-l3: 1.5em;
+$font-l4: 1.125em;
+$font-l5: 0.875em;
+$font-l6: 0.8125em;
+$font-l7: 0.75em;

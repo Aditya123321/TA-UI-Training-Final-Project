@@ -1,0 +1,84 @@
+// //Cards for Blogs
+//
+// .date {
+//   padding: 0.5em 0.4em;
+// }
+//
+// .card-container {
+//   //  @extend .__row, .__col-offset-2, .pad;
+//
+//   .__card {
+//     @extend .__col-mobile-12, .__col-desk-3, .__col-tab-6;
+//
+//     .__card-img {
+//       @extend .__col-mobile-12, .__col-tab-12, .__col-desk-12;
+//     }
+//
+//     .__card-date {
+//       @extend .bg-dark-gray, .text-white, .text-light, .__col-mobile-6, .__col-tab-6, .__col-desk-6, ;
+//
+//       padding: 5px 30px;
+//     }
+//
+//     .__card-title {
+//       @extend .__col-mobile-12, .__col-tab-12, .__col-desk-12;
+//
+//       a {
+//         @extend .text-black;
+//       }
+//     }
+//
+//     .__card-text {
+//       @extend .text-light, .text-gray, .text-left, .__col-mobile-12, .__col-tab-12, .__col-desk-12;
+//
+//       span {
+//         @extend .text-right;
+//       }
+//     }
+//   }
+// }
+
+//card-container for menu cards
+ul.card-container {
+  li {
+    @extend .bg-white;
+
+    border-radius: 10px;
+
+    h3 {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+// Ratings stars
+.star--active,
+.star--inactive {
+  font-size: $base-font-size + 4;
+}
+
+.star--active {
+  color: #ffc000;
+}
+
+.star--inactive {
+  color: #777;
+}
+
+.blog {
+  h3 {
+    @extend .text-red;
+
+    padding: 20px;
+
+    a {
+      font-size: $font-l4;
+
+
+      &:hover {
+        @extend .text-red;
+      }
+    }
+  }
+}

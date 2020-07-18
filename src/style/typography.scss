@@ -1,0 +1,166 @@
+@import "variables";
+@import "PoppinsSemiBold.scss";
+@import "PoppinsRegular.scss";
+
+// Font Defaults
+:root {
+  color: $black;
+  font-family: PoppinsSemiBold, sans-serif;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  line-height: 1.6;
+}
+
+// Fonts for form elements
+form,
+input {
+  font-family: PoppinsRegular, sans-serif;
+}
+
+// Float right
+.text-right {
+  float: right;
+}
+
+// Heading tags
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: $font-l1;
+  font-weight: $base-font-weight + 400;
+}
+
+h2 {
+  font-size: $font-l2;
+  font-weight: $base-font-weight + 300;
+}
+
+h3,
+h2.sm {
+  font-size: $font-l4;
+  font-weight: $base-font-weight + 300;
+}
+
+// Paragraph font
+p {
+  font-size: $font-l5;
+}
+
+// Form font
+form {
+  font-size: $font-l6;
+}
+
+// Address tag
+address {
+  font-size: $font-l5;
+  font-style: normal;
+}
+
+// Text helper class
+.text-bold {
+  font-weight: $base-font-weight + 300;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-light {
+  font-family: PoppinsRegular, sans-serif;
+}
+
+.text-upcase {
+  text-transform: uppercase;
+}
+
+.text-lower {
+  text-transform: lowercase;
+}
+
+.text-initcap {
+  text-transform: capitalize;
+}
+
+.text-red {
+  color: $red;
+}
+
+.link-text-big {
+  font-size: $base-font-size;
+}
+
+.text-white {
+  color: $white;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-black {
+  color: $black;
+}
+
+.__col--nest {
+  margin: -0.6em -0.5em;
+}
+
+.pad-top {
+  padding-top: 6*$base-font-size;
+}
+
+.text-gray {
+  color: $gray;
+}
+
+// Background helper
+.bg-white {
+  background-color: $white;
+}
+
+.bg-gray {
+  background-color: $lightgray;
+}
+
+.bg-dark-gray {
+  background-color: $dark-gray;
+}
+
+.bg-red {
+  background-color: $red;
+}
+
+.bg-black {
+  background-color: $black;
+}
+
+// Button helper class
+.btn--dark {
+  @extend .text-white;
+
+  padding: ($base-font-size - 3) ($base-font-size + 2);
+  font-size: $font-l5;
+  display: inline-block;
+  background-color: $black;
+  margin: ($base-font-size - 28px) ($base-font-size/8);
+}
+
+.btn {
+  @extend .bg-red;
+  @extend .text-white;
+  @extend .text-upcase;
+
+  padding: ($base-font-size - 3) ($base-font-size*2);
+  font-size: $font-l5;
+  display: inline-block;
+  margin: $base-font-size*2 0;
+}

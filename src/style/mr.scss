@@ -1,0 +1,13 @@
+$bg-color: lightyellow;
+$fg-color: blue;
+
+body,
+html,
+.body {
+  background: $bg-color !important;
+}
+
+.blogs {
+  color: $fg-color !important;
+  list-style-type: square;
+}

@@ -1,0 +1,134 @@
+{
+  "dishes" : [
+  {
+    "title": "Cappuccion",
+    "price": 49,
+    "desc": "Usage of the internet is becoming more common due to rapid advance.",
+    "img": "src/img/g1.jpg",
+    "cat": ["Breakfast"]
+  },
+  {
+    "title": "Americano",
+    "price": 49,
+    "desc": "Usage of the internet is becoming more common due to rapid advance.",
+    "img": "src/img/g2.jpg",
+    "cat": ["Breakfast"]
+  },
+  {
+    "title": "Macchiato",
+    "price": 49,
+    "desc": "Usage of the internet is becoming more common due to rapid advance.",
+    "img": "src/img/g3.jpg",
+    "cat": ["Lunch"]
+  },
+  {
+    "title": "Mocha",
+    "price": 49,
+    "desc": "Usage of the internet is becoming more common due to rapid advance.",
+    "img": "src/img/g4.jpg",
+    "cat": ["Budget Meal"]
+  },
+  {
+    "title": "Piccolo Latte",
+    "price": 49,
+    "desc": "Usage of the internet is becoming more common due to rapid advance.",
+    "img": "src/img/g5.jpg",
+    "cat": ["Buffet"]
+  },
+  {
+    "title": "Ristretto",
+    "price": 49,
+    "desc": "Usage of the internet is becoming more common due to rapid advance.",
+    "img": "src/img/g6.jpg",
+    "cat": ["Dinner"]
+  }
+],
+
+ "blogs" : [
+  {
+    "img": "src/img/b1.jpg",
+    "title": "Cooking Perfect Fried Rice in minutes",
+    "date": "20 Jan 2018",
+    "desc": "Inappropriate behavior ipsum dolor sit amet, consectetur.",
+    "likes": 15,
+    "comments": 2
+  },
+  {
+    "img": "src/img/b2.jpg",
+    "title": "Secret of making Heart Shaped eggs",
+    "date": "10 Jan 2018",
+    "desc": "Inappropriate behavior ipsum dolor sit amet, consectetur.",
+    "likes": 15,
+    "comments": 2
+  },
+  {
+    "img": "src/img/b3.jpg",
+    "title": "How to check steak if it is tender or not",
+    "date": "10 Jan 2018",
+    "desc": "Inappropriate behavior ipsum dolor sit amet, consectetur.",
+    "likes": 15,
+    "comments": 2
+  },
+  {
+    "img": "src/img/b4.jpg",
+    "title": "Seaseme and black seed Flavored Bun Rocks",
+    "date": "10 Jan 2018",
+    "desc": "Inappropriate behavior ipsum dolor sit amet, consectetur.",
+    "likes": 15,
+    "comments": 2
+  }
+],
+
+  "reviews" : [
+  {
+    "img": "src/img/user.png",
+    "name": "Hulda Sutton",
+    "rating": 1,
+    "cmnt": "Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker."
+  },
+  {
+    "img": "src/img/user.png",
+    "name": "James Bond",
+    "rating": 2,
+    "cmnt": "Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker."
+  },
+  {
+    "img": "src/img/user.png",
+    "name": "Cody Hanks",
+    "rating": 3,
+    "cmnt": "Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker."
+  },
+  {
+    "img": "src/img/user.png",
+    "name": "Peter Parker",
+    "rating": 4,
+    "cmnt": "Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker."
+  }
+],
+  "gallery" : [
+    {
+      "img": "src/img/g1.jpg",
+      "cat": ["Breakfast"]
+    },
+    {
+      "img": "src/img/g2.jpg",
+      "cat": ["Breakfast"]
+    },
+    {
+      "img": "src/img/g3.jpg",
+      "cat": ["Lunch"]
+    },
+    {
+      "img": "src/img/g4.jpg",
+      "cat": ["Budget Meal"]
+    },
+    {
+      "img": "src/img/g5.jpg",
+      "cat": ["Buffet"]
+    },
+    {
+      "img": "src/img/g6.jpg",
+      "cat": ["Dinner"]
+    }
+  ]
+}

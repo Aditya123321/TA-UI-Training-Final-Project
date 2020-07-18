@@ -1,0 +1,19 @@
+// Opening Hours Section
+.__sched {
+  li {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.1em 0;
+    border-bottom: 1px solid rgba(238, 238, 238, 0.3);
+
+    &:first-child {
+      margin-top: -1em;
+    }
+  }
+}
+
+// Padding for sections
+.pad {
+  padding-top: $base-font-size*6;
+  padding-bottom: $base-font-size*6;
+}

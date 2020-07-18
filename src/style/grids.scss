@@ -1,0 +1,339 @@
+//grids.scss
+
+@import "variables";
+@import "mixins";
+
+// Root element
+*,
+*::after,
+*::before {
+  @include border-box;
+
+  margin: 0;
+  padding: 0;
+}
+
+// Lists
+ul {
+  list-style: none;
+}
+
+// Margin
+.mar-left {
+  margin-left: $base-font-size - 4;
+}
+
+// Default anchor style
+a {
+  font-size: $font-l7;
+  font-weight: $base-font-weight + 200;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+// Anchor for telephone number
+.tel {
+  font-size: $font-l3;
+  font-weight: $base-font-weight + 400;
+  display: block;
+
+  &:first-of-type {
+    margin: $base-font-size/2 0 0 0;
+  }
+
+  @extend .text-white;
+}
+
+// Container class
+.wrapper {
+  margin: 0 auto;
+  width: $screen-size;
+}
+
+%clearfix {
+  *zoom: 1;
+
+  &::after,
+  &::before {
+    content: " ";
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+.p--pad {
+  padding-left: 20px;
+}
+//Clear fix
+.__row,
+.wrapper,
+.cf {
+  @extend %clearfix;
+}
+
+// Margin remove for heading tags
+.no-mar {
+  margin-bottom: 5px;
+}
+
+// Row modifiers
+.__row-reserve--img {
+  background-image: url('/img/reservation-bg.jpg');
+  background-size: cover;
+  position: relative;
+}
+
+.__row--review {
+  background-image: url('/img/review-bg.jpg');
+  min-height: 650px !important;
+  background-position: center;
+}
+
+// Overlay
+.overlay-bg {
+  background: rgba(17, 22, 24, 0.75);
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+// Position relative
+.rel-pos {
+  position: relative;
+}
+
+// Columns class
+[class*='__col-'] {
+  float: left;
+  min-height: 1px;
+  padding: 1em;
+  width: $screen-size;
+}
+
+// Horizontally center blocks
+.h-center {
+  display: block;
+  margin: 0 auto;
+}
+
+// Horizontally center inline, inline-blocks
+.text-center {
+  text-align: center;
+}
+
+@media #{$breakpoint-desktop} {
+  .wrapper {
+    max-width: $grid-max-width;
+    width: $screen-size - 5%;
+  }
+
+  .sticky {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    color: $black;
+    background-color: rgba(34, 34, 34, 0.9);
+    text-align: center;
+    margin: 0 !important;
+    z-index: 10;
+  }
+
+  @for $i from 1 through $grid-cols {
+    .__col-desk-#{$i} {
+      width: $screen-size / $grid-cols * $i;
+    }
+  }
+
+  ul.card-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      flex: 1 0 40%;
+      margin: 16px;
+      justify-content: space-between;
+    }
+  }
+
+  ul.img-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    li {
+      flex: 0 0 33.33333%;
+      justify-content: space-between;
+    }
+  }
+
+  .v-center {
+    display: flex;
+    align-items: center;
+  }
+
+  .social-foot {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @for $i from 1 through $grid-cols {
+    .__col-left-#{$i} {
+      margin-left: ($screen-size/$grid-cols*$i);
+    }
+
+    .__col-right-#{$i} {
+      margin-right: ($screen-size/$grid-cols*$i);
+    }
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .wrapper {
+    max-width: $grid-max-width;
+    width: $screen-size - 5%;
+  }
+
+  [class*='__col-'] {
+    padding: 5px;
+  }
+
+  .social-foot {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  ul.card-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      flex: 1 0 40%;
+      margin: 16px;
+      justify-content: space-between;
+    }
+  }
+
+  @for $i from 1 through $grid-cols {
+    .__col-tab-#{$i} {
+      width: $screen-size / $grid-cols * $i;
+    }
+  }
+}
+
+@media #{$breakpoint-mobile} {
+  [class*='__col-'] {
+    padding: 5px;
+  }
+
+  ul.card-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      flex: 1 0 94%;
+      margin: 16px;
+      justify-content: space-between;
+    }
+  }
+
+  .wrapper {
+    max-width: $grid-max-width;
+    width: $screen-size - 5%;
+  }
+
+  @for $i from 1 through $grid-cols {
+    .__col-mobile-#{$i} {
+      width: $screen-size / $grid-cols * $i;
+    }
+  }
+}
+
+@for $i from 1 through $grid-cols {
+  .__col-offset-#{$i} {
+    padding-left: ($screen-size/$grid-cols*$i/2);
+    padding-right: ($screen-size/$grid-cols*$i/2);
+  }
+}
+.__row-review--img {
+  background-image: url('../img/review-bg.jpg');
+  background-size: cover;
+  position: relative;
+  .carousel {
+    position: relative;
+    width: 100%;
+  }
+
+  //slider carousel action
+  .carousel-inner {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      text-align: center;
+      input {
+        display: none;
+      }
+    }
+
+  .carousel-open:checked + .carousel-item {
+      position: static;
+      opacity: 100;
+  }
+  .carousel-item {
+      position: absolute;
+      opacity: 0;
+      -webkit-transition: opacity 0.6s ease-out;
+      transition: opacity 0.6s ease-out;
+
+
+    img {
+      display: block;
+      height: auto;
+      max-width: 100%;
+      margin: 0 auto;
+      }
+  }
+  #carousel-1:checked ~ .control-1,
+  #carousel-2:checked ~ .control-2,
+  #carousel-3:checked ~ .control-3,
+  #carousel-2:checked ~ .control-4 {
+      display: block;
+  }
+  //carousel control
+  .carousel-indicators {
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      bottom: 2%;
+      left: 0;
+      right: 0;
+      text-align: center;
+      z-index: 10;
+  }
+  .carousel-indicators li {
+      display: inline-block;
+      margin: 0 5px;
+  }
+  .carousel-bullet {
+      color: #f42f2c;;
+      cursor: pointer;
+      display: block;
+      font-size: 35px;
+  }
+  .carousel-bullet:hover {
+      color: #aaaaaa;
+  }
+  #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+  #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+  #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
+  #carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet {
+      color: #428bca;
+  }
+}

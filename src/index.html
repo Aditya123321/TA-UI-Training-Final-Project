@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Marco Restaurant</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/mr.css">
+
+    <!-- Meta tags for Responsiveness -->
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+    <!-- IE Edge Compatible -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  </head>
+  <body>
+
+    <!--Marco Restaurant Header -->
+      <header class="__row--hero-bg text-white">
+        <nav class="__row __col-offset-2">
+          <img class="__logo" src="img/logo.png" alt="Marco Restaurant Logo"/>
+          <a href="javaScript:void(0)" class="hamburger"><span class="flaticon-menu"></span></a>
+          <a href="javaScript:void(0)" class="close"><span>&#x2715;</span></a>
+          <ul class="__menu" id="navbar">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Menu</a></li>
+            <li><a href="/">Gallery</a></li>
+            <li>
+              <a href="/" class="nest">Blog<span class="flaticon-down-arrow text-bold"></span></a>
+              <ul class="drop-down">
+                <li><a href="/">Blog 1</a></li>
+                <li><a href="/">Blog 2</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="nest" href="/">Pages<span class="flaticon-down-arrow text-bold"></span></a>
+              <ul class="drop-down">
+                <li><a href="/">Page 1</a></li>
+                <li><a href="/">Page 2</a></li>
+              </ul>
+            </li>
+            <li><a href="/">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="__row  pad __col-offset-2">
+          <div class="__col-mobile-12 __col-tab-12 __col-desk-6">
+            <p class="text-upcase text-light">Wide Options of Choice</p>
+            <h1>Delicious Recipes</h1>
+            <p class="text-light __col-desk-11 __col--nest">inappropriate behavior is often laughed off as “boys will be boys,” women face higher
+              conduct standards especially in the workplace. That’s why it’s crucial that, as women.</p>
+            <a href="#" class="btn">Check Our Menu</a>
+          </div>
+        </div>
+      </header>
+
+    <main>
+    <!-- Marco Restaurant About Section -->
+      <div class="__row v-center __col-desk-12 pad">
+        <!-- About Us Section -->
+        <section class="__col-mobile-12 __col-tab-12 __col-desk-6 __col-offset-2">
+          <h2>About Our Story</h2>
+          <p class="text-light text-gray">Who are in extremely love with eco friendly system. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <a href="/" class="btn">View Full Menu</a>
+        </section>
+
+        <!-- About Us Image -->
+        <img src="src/img/about-img.jpg" alt="About Our Story Image" class="__col-mobile-12 __col-tab-12 __col-desk-5"/>
+      </div>
+
+      <!-- Marco Restaurant Filter Cards -->
+        <nav class="__row __col-offset-2 filter bg-gray pad-top">
+          <ul  class="__filter-menu __col-desk-12 __col-tab-12 __col-mobile-12 menu">
+            <li data-cat="All" class="active">All</li>
+            <li data-cat="Breakfast">Breakfast</li>
+            <li data-cat="Lunch">Lunch</li>
+            <li data-cat="Dinner">Dinner</li>
+            <li data-cat="Budget Meal">Budget Meal</li>
+            <li data-cat="Buffet">Buffet</li>
+          </ul>
+        </nav>
+
+        <template id="menuCard">
+          <li class="__row __col-mobile-12 __col-tab-6 __col-desk-3 blog">
+            <h3><span class="text-black">Cappucino</span> <span class="text-red">$49</span></h3>
+            <p class="text-light p--pad">Usage of the Internet is becoming more common due to rapid advance.</p>
+          </li>
+        </template>
+
+        <ul class="__row pad __col-offset-2 bg-gray card-container" id="menuParent">
+
+        </ul>
+
+        <!-- Marco Restaurant Reservation Form Section -->
+            <div class="__row v-center __row-reserve--img __col-offset-2 pad">
+              <div class="overlay overlay-bg">
+              </div>
+              <section class="__col-mobile-12 __col-tab-12 __col-desk-5 text-white rel-pos">
+                <h2>Reserve Your Seats to Confirm if You Come with Your Family</h2>
+                <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Quis nostrud exercitation ullamco laboris
+                  nisi ut aliquip ex ea.</p>
+                <a href="/" class="btn">View Full Menu</a>
+              </section>
+              <div class="__col-mobile-12 __col-tab-12 __col-left-2 __col-desk-5 rel-pos">
+                <form class="bg-white pad">
+                  <fieldset>
+                    <legend>Reserve a Table</legend>
+                      <label for="name">
+                        <input type="text" name="name" id="name" placeholder="Your Name"/>
+                      </label>
+                      <label for="email">
+                        <input type="email" name="email" id="email" placeholder="Your Email"/>
+                      </label>
+                      <label for="phone">
+                        <input type="tel" name="phone" id="phone" placeholder="Phone Number"/>
+                      </label>
+                      <label for="date">
+                        <input type="text" name="date" id="date" placeholder="Select Date & Time" onfocus="(this.type='date')" onblur="(this.type='text')"/>
+                      </label>
+                      <label for="event">
+                        <select id="event">
+                          <option selected>Select Event</option>
+                        </select>
+                      </label>
+                      <input type="submit" class="sub-btn" value="Make Reservation"/>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+
+
+    <!-- Marco Restaurant Menu Gallery -->
+
+      <section class="__row __col-offset-2 text-center pad-top bg-gray">
+        <h2>Food and Customer Gallery</h2>
+        <p class="text-light text-gray">Who are in extremely love with eco friendly system.</p>
+      </section>
+
+      <nav class="__row __col-offset-2 filter bg-gray pad-top">
+        <ul  class="__filter-menu __col-desk-12 __col-tab-12 __col-mobile-12 gallery">
+          <li class="active" data-cat="All">All</li>
+          <li data-cat="Breakfast">Breakfast</li>
+          <li data-cat="Lunch">Lunch</li>
+          <li data-cat="Dinner">Dinner</li>
+          <li data-cat="Budget Meal">Budget Meal</li>
+          <li data-cat="Buffet">Buffet</li>
+        </ul>
+      </nav>
+
+      <template id="galleryCard">
+        <li class="__col-mobile-12 __col-tab-6 __col-desk-4">
+          <img src="" class="__col-mobile-12 __col-tab-12 __col-desk-12" alt="Cappucino"/>
+      </li>
+      </template>
+      <ul class="__row pad __col-offset-2 bg-gray img-gallery" id="galleryParent">
+      </ul>
+
+
+    <!-- Marco Restaurant Reviews Section -->
+    <ul id="reviewParent" class="__row __col-offset-2 __row--review text-center pad slideshow-container">
+      <template id="reviewCard">
+        <li class="mySlides fade">
+          <img src="img/user.png" alt="User Profile Picture"/>
+          <h2 class="sm no-mar">Hulda Sutton</h2>
+          <p>
+            <span class="flaticon-star"></span>
+            <span class="flaticon-star"></span>
+            <span class="flaticon-star"></span>
+            <span class="flaticon-star"></span>
+            <span class="flaticon-star"></span>
+          </p>
+          <q class="text-light text-gray text-italic h-center __col-desk-6 __col-mobile-12 __col-tab-12 __col-left-3">Accessories Here you can find the best computer accessory for your laptop, monitor,
+            printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer,
+            scanner, speaker.</q>
+        </li>
+      </template>
+      <template id="dotNav">
+        <li class="dot"></li>
+      </template>
+
+      <ul id="carousel-control">
+      </ul>
+    </ul>
+  <!-- use review section ends -->
+    <!-- Marco Restaurant Blogs Section -->
+      <section class="__row __col-offset-2 text-center pad-top">
+        <h2>Latest From Our Blog</h2>
+        <p class="text-light text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua.</p>
+      </section>
+      <ul class="__row __col-offset-2 pad" id="blogParent">
+        <template id="blogCard">
+          <li class="__row __col-mobile-12 __col-tab-6 __col-desk-3 blog">
+            <a href="#">
+              <img src="img/b1.jpg" alt="Check out our article on Cooking Perfect Fried Rice in minutes" class="__col-mobile-12 __col-tab-12 __col-desk-12"/></a>
+            <date class="date mar-left bg-dark-gray text-white text-light text-center __col-mobile-6 __col-tab-6 __col-desk-6">10 Jan 2018</date>
+            <h3 class="__col-mobile-12 __col-tab-12 __col-desk-12 text-left __col--nest"><a class="text-black" href="#">Cooking Perfect Fried Rice in minutes</a></h3>
+            <p class="text-light text-gray text-left __col-mobile-12 __col-tab-12 __col-desk-12">inappropriate behavior ipsum dolor sit amet, consectetur.</p>
+            <p class="text-light text-gray text-left __col-mobile-12 __col-tab-12 __col-desk-12"><span class="flaticon-heart">15 Likes</span> <span class="text-right flaticon-comment">02 Comments</span></p>
+          </li>
+        </template>
+      </ul>
+    </main>
+
+    <!-- Marco Restaurant Footer -->
+      <footer class="text-white">
+
+        <!-- Footer Row 1 -->
+        <div class="__row pad bg-red __col-offset-2">
+
+          <!-- Opening Hours Section -->
+          <section class="__col-mobile-12 __col-tab-6 __col-desk-4">
+            <h2 class="sm">Opening Hours</h2>
+            <ul class="text-light __sched">
+              <li><span>Monday-Friday</span> <span class="text-right">08.00 am - 10.00 pm</span></li>
+              <li>Saturday <span class="text-right">08.00 am - 10.00 pm</span></li>
+              <li>Sunday <span class="text-right">08.00 am - 10.00 pm</span></li>
+            </ul>
+          </section>
+
+          <!-- Contact Us Section -->
+          <section class="__col-mobile-12 __col-tab-6 __col-desk-4">
+            <h2 class="sm">Contact Us</h2>
+            <address class="text-light">56/8, los angeles, rochy beach, Santa monica, United states of america - 1205</address>
+            <a href="#" class="tel">012-6532-568-9746</a>
+            <a href="#" class="tel">012-6532-569-9748</a>
+          </section>
+
+          <!-- Newsletter Section -->
+          <section class="__col-mobile-12 __col-tab-6 __col-desk-4">
+            <h2 class="sm">Newsletter</h2>
+            <p class="text-light">You can trust us. we only send promo offers, not a single spam.</p>
+
+            <!-- Subscribe Newsletter Form -->
+            <form>
+              <fieldset>
+                <legend aria-hidden="true">Newsletter</legend>
+                  <div class="form-group">
+                    <label for="sub-email" aria-hidden="true">
+                      <input type="text" name="sub-email" id="sub-email" placeholder="Your Email Address"/>
+                    </label>
+                    <input type="submit" class="input-btn" value="&#xf107;" />
+                  </div>
+              </fieldset>
+            </form>
+          </section>
+
+        </div>
+
+        <!-- Footer Row 2 -->
+        <div class="__row bg-dark-gray  __col-offset-2 text-light">
+          <p class="__col-mobile-12 __col-tab-12 __col-desk-8">Copyright &copy;2019 All rights reserved | This template is
+            made with <span class="flaticon-heart text-red"></span> by <a href="/" class="text-red link-text-big">Colorlib</a></p>
+          <div class="__col-mobile-12 __col-tab-12 __col-desk-4 social-foot">
+            <a href="#" class="btn--dark flaticon-facebook-logo"></a>
+            <a href="#" class="btn--dark flaticon-twitter-logo"></a>
+            <a href="#" class="btn--dark flaticon-dribble-logo"></a>
+            <a href="#" class="btn--dark flaticon-behance-logo"></a>
+          </div>
+        </div>
+
+      </footer>
+
+    <!-- External Scripts and JSON data -->
+    <script src="js/mr.js"></script>
+    <!-- <script>
+
+    </script> -->
+    <script src="js/blogs.js"></script>
+    <script src="js/menu-card.js"></script>
+
+  </body>
+</html>
