@@ -48,7 +48,7 @@
     "stylelint-config-standard": "^18.3.0",
     "stylelint-webpack-plugin": "^0.10.5",
     "webpack": "^4.39.1",
-    "webpack-cli": "^3.3.6",
+    "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.7.2",
     "webpack-eslint-plugin": "^1.2.0"
   },
