@@ -53,6 +53,6 @@
     "webpack-eslint-plugin": "^1.2.0"
   },
   "dependencies": {
-    "webpack-karma-jasmine": "^3.0.8"
+    "webpack-karma-jasmine": "^4.0.0"
   }
 }
